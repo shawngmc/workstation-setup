@@ -24,7 +24,7 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 # Install new compose
-wget https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-linux-x86_64
-chmod +x docker-compose-linux-x86_64
+wget -p /tmp/ https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-linux-x86_64
+chmod +x /tmp/docker-compose-linux-x86_64
 sudo mkdir -pv /usr/local/lib/docker/cli-plugins
-sudo mv ./docker-compose-linux-x86_64 /usr/local/lib/docker/cli-plugins/docker-compose
+sudo mv /tmp/docker-compose-linux-x86_64 /usr/local/lib/docker/cli-plugins/docker-compose
