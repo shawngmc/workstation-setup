@@ -8,3 +8,7 @@ sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(l
 
 # Install vault
 sudo apt-get update && sudo apt-get install vault
+
+# Set up token
+lpass login shawngmc@gmail.com
+vault login token=$(lpass show --password "Hitoma Vault Root Token")
